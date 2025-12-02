@@ -34,3 +34,47 @@ $ pyenv local python-project-env
 ```sh
 $ pyenv local
 ```
+
+## uv 활용
+
+### uv 버전 확인
+
+```sh
+$ uv --version
+uv 0.9.14 (Homebrew 2025-12-01)
+```
+
+### uv init
+```sh
+$ uv init
+Initialized project `프로젝트 경로`
+```
+
+### uv virtualenv 생성
+
+```sh
+$ uv venv --python 3.13.0
+Using CPython 3.13.0
+Creating virtual environment at: .venv
+Activate with: source .venv/bin/activate
+```
+
+### virtualenv 실행
+
+```sh
+$ source .venv/bin/activate
+```
+
+### uv 파이썬 버전 설정
+
+```sh
+$  uv python pin 3.13
+Pinned `.python-version` to `3.13`
+```
+
+### uv main.py 실행
+
+```sh
+$  uv run python main.py
+```
+
